@@ -1,0 +1,80 @@
+body {
+  background-image: url("images/background.jpg");
+  background-size: 100%;
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 670px;
+}
+
+#menu {
+  display: flex;
+  width: 40%;
+  height: 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+h2 {
+  color: #ffffff;
+  font-size: 1em;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+#gameBoard {
+  width: 50%;
+  height: 80%;
+  border: 3px solid #c703e1;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(21, 1fr);
+  grid-template-rows: repeat(21, 1fr);
+}
+.snake {
+  background-color: #4c036f;
+  border: 1px solid #c703e1;
+  border-radius: 20%;
+}
+
+.food {
+  background-color: rgb(162, 213, 226);
+  border: 1px solid rgb(2, 164, 213);
+  border-radius: 20%;
+}
+
+#resetBtn {
+  padding: 1%;
+  height: 40px;
+  color: #4c036f;
+  border: 1px solid #791d85;
+  background-color: white;
+  border-radius: 10%;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+#resetBtn:hover {
+  background-color: #c262f3;
+  color: white;
+}
+
+#score {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 15px;
+  margin: 15px 0;
+}
+
+@media (max-width: 480px) {
+    body {
+        height: 38em;
+      }
+  #gameBoard {
+    width: 80%;
+    height: 74%;
+  }
+}
